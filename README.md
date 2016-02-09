@@ -1,2 +1,2 @@
 # Ruby-Server
-### Ruby server created in Sinatra for Wyncode week 4
+### Ruby server created with Sinatra for Wyncode week 4
