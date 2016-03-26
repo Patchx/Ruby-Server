@@ -4,77 +4,80 @@
 }*/
 
 body {
-    background-color: white;
-    height: 100vh;
-}
+  margin: 0;
+  background: #ffffc7; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, #ffffc7 , #f2ecba); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #ffffc7, #f2ecba); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #ffffc7, #f2ecba); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #ffffc7 , #f2ecba); /* Standard syntax */
+} 
+
 div {
     display: inline-block;
+    float: left;
 }
+
+div * {
+    margin: 0.7vw;
+}
+
 h1 {
     font-family: Arial;
     font-size: 4vw;
 }
+
 h3 {
     font-family: Verdana;
     font-size: 1vw;
-    position: absolute;
-    text-align: center;
-    z-index: 2;
 }
+
 p {
     font-family: sans-serif;
     font-size: 2vw;
 }
-#biopic {
-    height: 48%;
-    left: 78%;
-    position: fixed;
-    top: 22%;
-    width: 20%;
-    z-index: 1;
-}
-#biopic h2 {
-    font-size: 1.2vw;
-    text-align: right;
-    z-index: 2;
-}
-#biopic h1 {
-    font-family: cursive;
-    font-size: 2vw;
-    left: 0;
-    text-align: center;
-    z-index: 2;
-}
-#about {
-    background-color: white;
-    bottom: 3%;
-    height: 95%;
-    left: 0.6%;
-    position: fixed;
-    top: 2%;
-    width: 15%;
-    z-index: 2;
-}
-#about h2 {
-    font-size: 2vw;
-}
-#about p {
-    font-size: 1.5vw;
+
+.repo {
+    width: 4vw;
 }
 
-#biopic img {
-    height: 67%;
+.social {
+    width: 4vw;
 }
+
+.lang {
+    height: 4vw;
+}
+
+#myFace {
+    width: 20vw;
+}
+
+#spine {
+    background-color: #382829;
+    min-height: 100vh;
+    width: 5vw;
+}
+
+#bio {
+    height: 100vh;
+    width: 25vw;
+}
+
 #main {
-    background-color: #846C5B;
-    height: 100%;
-    position: fixed;
-    right: 23%;
-    top: 0;
-    width: 60%;
-    z-index: 2;
+    height: 100vh;
+    width: 65vw;
 }
-#main img {
-    float: left;
-    height: 6%;
+
+#bio h2 {
+    font-size: 1.2vw;
+}
+#bio h1 {
+    font-family: cursive;
+    font-size: 2vw;
+}
+
+@media screen and (min-aspect-ratio: 1/1) {
+    body {
+        /*background: black;*/
+    }
 }
