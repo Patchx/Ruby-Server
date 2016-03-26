@@ -4,6 +4,16 @@ require 'nokogiri'
 require 'active_support/all'
 
 get '/?' do
+	"<h1>Welcome to Robert's Test Server</h1> \n
+	<p>Things to type: \nresume \nstocks \nsinatra \nruby</p>"
+end
+
+get '/resume' do
+	redirect './index.html'
+end
+
+get '/stocks' do
+
 	response = HTTParty.get("http://finance.yahoo.com/q?s=#{params[:stock]}")
 	dom = Nokogiri::HTML(response.body)
 	if params[:stock] == nil
@@ -15,6 +25,7 @@ get '/?' do
 	end
 	price = ticker_span.children[0].content.to_f.to_s(:currency)
 	return "<h2>Current stock price for #{params[:stock]} is #{price}</h2>"
+
 end
 
 get '/sinatra' do
