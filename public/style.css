@@ -51,23 +51,24 @@ p {
 
 #myFace {
     width: 14vw;
+    margin-left: 10%;
 }
 
 #spine {
     background-color: #281719;
     min-height: 100vh;
-    width: 6vw;
+    width: 9vw;
 }
 
 #bio {
     height: 100vh;
-    width: 19vw;
+    width: 20vw;
     background-color: #ad2a26
 }
 
 #main {
     height: 100vh;
-    width: 73vw;
+    width: 70vw;
 }
 
 #bio h3 {
@@ -88,6 +89,7 @@ p {
 #socialButtons {
     width: 100%;
     display: flex;
+    margin-left: 20%;
 }
 
 #navBar {
@@ -102,7 +104,7 @@ p {
 }
 
 /*When screen is longer than it is wide*/
-@media screen and (max-aspect-ratio: 1/1) {
+@media screen and (max-aspect-ratio: 5/4) {
     body {
         flex-direction: column;
     }
@@ -125,6 +127,7 @@ p {
     }
     #socialButtons {
         flex-direction: column;
+        margin-left: 30%;
     }
     #myFace {
         height: 15vh;
