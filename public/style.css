@@ -4,6 +4,7 @@
 }*/
 
 body {
+  display: flex;
   margin: 0;
   background: #ffffc7; /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(left, #ffffc7 , #f2ecba); /* For Safari 5.1 to 6.0 */
@@ -18,12 +19,12 @@ div {
 }
 
 div * {
-    margin: 0.7vw;
+    margin: 2%;
 }
 
 h1 {
     font-family: Arial;
-    font-size: 4vw;
+    font-size: 2.5vw;
 }
 
 h3 {
@@ -33,7 +34,7 @@ h3 {
 
 p {
     font-family: sans-serif;
-    font-size: 2vw;
+    font-size: 1.5vw;
 }
 
 .repo {
@@ -41,7 +42,7 @@ p {
 }
 
 .social {
-    width: 4vw;
+    width: 3vw;
 }
 
 .lang {
@@ -49,35 +50,97 @@ p {
 }
 
 #myFace {
-    width: 20vw;
+    width: 14vw;
 }
 
 #spine {
-    background-color: #382829;
+    background-color: #281719;
     min-height: 100vh;
-    width: 5vw;
+    width: 6vw;
 }
 
 #bio {
     height: 100vh;
-    width: 25vw;
+    width: 19vw;
+    background-color: #ad2a26
 }
 
 #main {
     height: 100vh;
-    width: 65vw;
+    width: 73vw;
 }
 
-#bio h2 {
-    font-size: 1.2vw;
+#bio h3 {
+    color: white;
 }
 #bio h1 {
     font-family: cursive;
     font-size: 2vw;
+    color: white;
 }
 
-@media screen and (min-aspect-ratio: 1/1) {
+#picAndLinks {
+    display: flex;
+    max-height: 100%;
+    flex-direction: column;
+}
+
+#socialButtons {
+    width: 100%;
+    display: flex;
+}
+
+#navBar {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: 8vh;
+}
+#navBar img {
+    height: 100%;
+    margin: 0;
+}
+
+/*When screen is longer than it is wide*/
+@media screen and (max-aspect-ratio: 1/1) {
     body {
-        /*background: black;*/
+        flex-direction: column;
     }
+    #spine {
+        height: 10vh;
+        min-height: 0;
+        width: 99vw;
+        min-width: 0;
+    }
+    #bio {
+        height: 20vh;
+        width: 100vw;
+    }
+    #main {
+        height: 100vh;
+        width: 73vw;
+    }
+    #picAndLinks {
+        flex-direction: row;
+    }
+    #socialButtons {
+        flex-direction: column;
+    }
+    #myFace {
+        height: 15vh;
+        width: auto;
+    }
+    #bio h1 {
+        font-size: 3.5vw;
+    }
+    h1 {
+        font-size: 3.5vw;
+    }
+    h3 {
+        font-size: 2vw;
+    }
+
+    p {
+        font-size: 2.5vw;
+    }    
 }
