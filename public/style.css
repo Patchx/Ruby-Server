@@ -6,7 +6,7 @@
 body {
   display: flex;
   margin: 0;
-  background: #ffffc7; /* For browsers that do not support gradients */
+  background: #f2ecba; /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(left, #ffffc7 , #f2ecba); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(right, #ffffc7, #f2ecba); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(right, #ffffc7, #f2ecba); /* For Firefox 3.6 to 15 */
@@ -126,7 +126,6 @@ a * {
         height: 20vh;
         min-width: 100vw;
         flex-direction: row;
-        flex-wrap: wrap;
     }
     #main {
         height: 69vh;
@@ -146,11 +145,5 @@ a * {
         height: 15vh;
         width: auto;
         margin: 10% 2% 10% 2%;
-    }
-}
-
-@media screen and (max-aspect-ratio: 3/8) {
-    bio {
-        background-color: black;
     }
 }
