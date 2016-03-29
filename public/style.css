@@ -75,7 +75,7 @@ a * {
 
 #myFace {
     width: 14vw;
-    margin: 4% 11% 1% 11%;
+    margin: 4vh 11% 1% 11%;
 }
 
 #socialButtons {
@@ -132,9 +132,6 @@ a * {
         height: 69vh;
         min-width: 100vw;
     }
-    #socialButtons {
-        margin-left: 30%;
-    }
     #bio * {
         margin: 4%;
     }   
@@ -142,9 +139,18 @@ a * {
         font-size: 4vh;
         margin: 1%;
     }
+    #socialButtons {
+        margin: 0;
+    }
     #myFace {
         height: 15vh;
         width: auto;
         margin: 10% 2% 10% 2%;
+    }
+}
+
+@media screen and (max-aspect-ratio: 3/8) {
+    bio {
+        background-color: black;
     }
 }
