@@ -152,7 +152,6 @@ a * {
 
 @media screen and (max-width: 280px) {
     #bio h1 {
-        font-size: 15vw;
     }
     #myFace {
         display: none;
