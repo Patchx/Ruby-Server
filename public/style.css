@@ -72,6 +72,7 @@ a * {
 
 #myFace {
     width: 14vw;
+    object-fit: scale-down;
     margin: 4vh 11% 1% 11%;
 }
 
@@ -142,16 +143,23 @@ a * {
         margin: 0;
     }
     #myFace {
-        height: 15vh;
+        margin: 2% auto 2% 2%;
+        height: 18vh;
         width: auto;
-        margin: 10% 2% 10% 2%;
+        max-width: 30%;
     }
 }
 
-@media screen and (max-width: 180px) {
+@media screen and (max-width: 280px) {
     #bio h1 {
         font-size: 15vw;
     }
+    #myFace {
+        display: none;
+    }
+}
+
+@media screen and (max-height: 120px) {
     #myFace {
         display: none;
     }
