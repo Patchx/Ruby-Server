@@ -7,7 +7,8 @@ body {
   display: flex;
   margin: 0;
   overflow-x: hidden;
-  background-color: black;
+    background-image: url("portfolio-yellow-texture.png");
+    background-color: #f2ecba;
 } 
 
 div {
@@ -61,8 +62,6 @@ a * {
     width: 71vw;
     overflow-x: hidden;
     overflow-y: auto;
-    background-image: url("portfolio-yellow-texture.png");
-    background-color: #f2ecba;
 }
 
 #bio h1 {
