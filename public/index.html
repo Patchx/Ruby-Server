@@ -5,6 +5,7 @@
 
 	<!-- JQuery CDN, needed for TurnJS-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.js"></script>
 
 	<!-- TurnJS for page turn -->
 	<script type="text/javascript" src="turn.js"></script>
@@ -138,6 +139,14 @@ $(window).bind('keydown', function(e){
 	else if (e.keyCode==39)
 		$('#book').turn('next');
 		
+});
+
+$(window).on("swipeleft",function(){
+	$('#book').turn('next');
+});
+
+$(window).on("swiperight",function(){
+	$('#book').turn('previous');
 });
 
 
