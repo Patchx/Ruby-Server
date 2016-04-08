@@ -3,28 +3,19 @@
     border: 2px dashed blue;
 }*/
 
-html {
-    overflow-x: hidden;
-}
 
 ::-webkit-scrollbar {
     display: none;
 }
 
 body {
-  display: flex;
-  align-items: stretch;
   margin: 0;
-  overflow-x: hidden;
+  background-color: black;
 } 
 
 div {
     display: inline-block;
     float: left;
-}
-
-div * {
-    margin: 2%;
 }
 
 p {
@@ -52,28 +43,33 @@ a * {
     height: 40px;
 }
 
+#book {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    /* For iphones */
+    position: fixed; 
+}
+
 #spine {
     background-image: url("portfolio-black-texture.png");
     background-color: #281719;
-    min-height: 99vh;
-    width: 9vw;
+    height: 99%;
+    width: 9%;
     border-style: outset;
     border-color: #221210;
 }
 
 #bio {
-    min-height: 100vh;
-    width: 20vw;
+    height: 100%;
+    width: 20%;
     background-image: url("portfolio-red-texture.png");
     background-color: #ad2a26;
-    display: flex;
-    flex-direction: column;
 }
 
-#main {
-    min-height: 100vh;
-    width: 71vw;
-    overflow-x: hidden;
+#paper {
+    height: 100%;
+    width: 69%;
     background-image: url("portfolio-yellow-texture.png");
     background-color: #f2ecba;
 }
@@ -93,23 +89,8 @@ a * {
     margin: 2vh 10% 0% 10%;
 }
 
-#navBar {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    height: 8%;
-    margin: 0px;
-}
-#navBar img {
-    height: 100%;
-    margin: 0;
-}
-
 /*When screen is longer than it is wide*/
 @media screen and (max-aspect-ratio: 5/4) {
-    body {
-        flex-direction: column;
-    }
     h1 {
         font-size: 20px;
     }
@@ -127,23 +108,16 @@ a * {
         width: auto;
     }
     #spine {
-        height: 10vh;
-        min-height: 0;
-        width: 100vw;
-        min-width: 0;
+        height: 10%;
+        width: 100%;
     }
     #bio {
-        min-height: 0;
-        height: 22vh;
-        width: 100vw;
-        max-width: 100vw;
-        flex-direction: row;
-        overflow-x: hidden;
-        overflow-y: auto;
+        height: 22%;
+        width: 100%;
     }
-    #main {
-        height: 69vh;
-        width: 100vw;
+    #paper {
+        height: 69%;
+        width: 100%;
     }
     #bio h1 {
         font-size: 20px;
@@ -158,9 +132,6 @@ a * {
     }
     #myFace {
         margin: 2% auto 2% 2%;
-        height: 18vh;
-        width: auto;
-        max-width: 30%;
     }
 }
 
