@@ -5,7 +5,7 @@ require 'active_support/all'
 
 get '/?' do
 	"<h1>Welcome to Robert's Test Server</h1> \n
-	<p>Things to type: \nresume \nstocks \nsinatra \nruby</p>"
+	<p>Things to type: \nresume \nstocks \nsinatra \ntest</p>"
 end
 
 get '/resume' do
@@ -32,6 +32,6 @@ get '/sinatra' do
 	"<h1>Sinatra Rocks!</h1>"
 end
 
-get '/ruby' do
-	redirect './ruby-logo.png'
+get '/test' do
+	redirect './test.html'
 end

@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html>
-
 <head>
 	<link type="text/css" rel="stylesheet" href="./style.css"/>
 
-	<!-- Purecss CDN -->
+	<!-- JQuery CDN, needed for TurnJS-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 
+	<!-- TurnJS for page turn -->
+	<script type="text/javascript" src="turn.js"></script>
+
+	<!-- PureCSS CDN for menus -->
 	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<title>Robert Anderson</title>
 </head>
@@ -16,30 +19,32 @@
 
 <div ID="book">
 
-	<div ID="spine"></div>
-	<div ID="bio">
-
-			<img ID="myFace" src="profile-pic-alpha.png">
-
-			<div ID="socialButtons">
-			<h1>Robert Anderson</h1>
-
-			<a href="tel:+1-561-310-9933" target="_blank"><img class="social" alt="call" src="phone.png"></a>
-
-			<a ID="email" href="#"><img class="social" alt="email" src="mail.png"></a>
-
-			<a href="https://drive.google.com/file/d/0B2QzEXlTkhI7SHRETnJkXzBhT2M/view?usp=sharing" target="_blank"><img class="social" alt="resume" src="resume.png"></a>
-
-			<a href="https://github.com/Patchx" target="_blank"><img class="social" alt="GitHub" src="github-icon.png"></a>
-
-			<a href="https://www.linkedin.com/in/robertandersonlink" target="_blank"><img class="social" alt="LinkedIn" src="linkedin-icon.png"></a>
-
-			<a href="https://twitter.com/randerTw?lang=en" target="_blank"><img class="social" alt="Twitter" src="twitter-icon.png"></a>
-
-			</div>
+	<div ID="spine">
+		<h1>Robert Anderson</h1>
 	</div>
 
 	<div ID="paper">
+
+		<div ID="bio">
+
+				<h1>Robert Anderson</h1>
+
+				<div ID="socialButtons">
+
+				<a href="tel:+1-561-310-9933" target="_blank"><img class="social" alt="call" src="phone.png"></a>
+
+				<a ID="email" href="#"><img class="social" alt="email" src="mail.png"></a>
+
+				<a href="https://drive.google.com/file/d/0B2QzEXlTkhI7SHRETnJkXzBhT2M/view?usp=sharing" target="_blank"><img class="social" alt="resume" src="resume.png"></a>
+
+				<a href="https://github.com/Patchx" target="_blank"><img class="social" alt="GitHub" src="github-icon.png"></a>
+
+				<a href="https://www.linkedin.com/in/robertandersonlink" target="_blank"><img class="social" alt="LinkedIn" src="linkedin-icon.png"></a>
+
+				<a href="https://twitter.com/randerTw?lang=en" target="_blank"><img class="social" alt="Twitter" src="twitter-icon.png"></a>
+
+				</div>
+		</div>
 
 		<div class="project">
 			<a href="https://github.com/icdozen/sunnyside" target="_blank"><img class="repo" src="repo-icon.png"></a>
@@ -88,27 +93,67 @@
 
 	</div>
 
+	<div ID="spine">
+		<img ID="myFace" src="profile-pic-glow.png">
+	</div>
+
 </div>
 
-	<script type="text/javascript">
 
-	document.getElementById("email").addEventListener("click", function() {
-	    alert("robert.anderson.fl@gmail.com");
-	});
+<script type="text/javascript">
 
-	</script>
+// refresh page when resizing browser
+$(window).bind('resize', function(e)
+{
+  if (window.RT) clearTimeout(window.RT);
+  window.RT = setTimeout(function()
+  {
+    this.location.reload(false); /* false to get page from cache */
+  }, 100);
+});
 
-	<!-- Google Analytics -->
-	<script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+document.getElementById("email").addEventListener("click", function() {
+    alert("robert.anderson.fl@gmail.com");
+});
 
-	  ga('create', 'UA-75809743-1', 'auto');
-	  ga('send', 'pageview');
+$(window).ready(function() {
+	$('#book').turn({
+						display: 'single',
+						acceleration: true,
+						gradients: !$.isTouch,
+						elevation:50,
+						when: {
+							turned: function(e, page) {
+								/*console.log('Current view: ', $(this).turn('view'));*/
+							}
+						}
+					});
+});
 
-	</script>
+
+$(window).bind('keydown', function(e){
+	
+	if (e.keyCode==37)
+		$('#book').turn('previous');
+	else if (e.keyCode==39)
+		$('#book').turn('next');
+		
+});
+
+
+</script>
+
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-75809743-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 
 </body>
 </html>

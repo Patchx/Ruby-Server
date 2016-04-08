@@ -55,12 +55,15 @@ a * {
 #spine {
     background-image: url("portfolio-black-texture.png");
     background-color: #281719;
+    height: 98%;
+    width: 10%;
     border-style: outset;
     border-color: #673832;
-    text-align: center;
 }
 
 #paper {
+    height: 99.5%;
+    width: 88%;
     background-image: url("portfolio-yellow-texture.png");
     background-color: #f2ecba;
     overflow-y: auto;
@@ -73,20 +76,13 @@ a * {
     margin-bottom: 2%;
 }
 
-#spine h1 {
-    color: #080b06;
-    font-size: 8vw;
-    text-shadow: 1px 1px #bd7e75;
-}
-
 #bio h1 {
     margin: 0;
 }
 
 #myFace {
-    width: 35vw;
+    width: 8vw;
     float: left;
-    margin: 4%;
 }
 
 #socialButtons {
@@ -97,6 +93,18 @@ a * {
 @media screen and (max-aspect-ratio: 5/4) {
 
     #bio {
+        height: 22%;
+        width: 100%;
+    }
+    #bio h1 {
+        font-size: 90%
+    }
+    #socialButtons {
+        margin: 0;
+        width: 80%;
+    }
+    #socialButtons a {
+        margin: 0;
     }
 }
 
@@ -106,7 +114,5 @@ a * {
 }
 
 @media screen and (max-height: 120px) {
-    #bio h1 {
-    }
 }
 
