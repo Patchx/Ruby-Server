@@ -10,6 +10,7 @@
 body {
   margin: 0;
   background-color: black;
+  overflow: hidden;
 } 
 
 div {
@@ -17,9 +18,13 @@ div {
     float: left;
 }
 
-p {
-    font-family: sans-serif;
-    font-size: 20px;
+h1 {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+h3 {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    display: inline;
 }
 
 a * {
@@ -40,27 +45,20 @@ a * {
 }
 
 .lang {
-    height: 40px;
+    height: 80px;
 }
 
-#book {
-    height: 95vh;
-    width: 95vw;
-    margin: 1% 2% 1% 2%;
-    overflow: hidden;
-    /* For iphones */
-    position: fixed; 
-}
-
-#spine {
+.spine {
     background-image: url("portfolio-black-texture.png");
     background-color: #281719;
     border-style: outset;
     border-color: #673832;
     text-align: center;
+    height: 99%;
+    width:99%;
 }
 
-#paper {
+.paper {
     background-image: url("portfolio-yellow-texture.png");
     background-color: #f2ecba;
     overflow-y: auto;
@@ -68,45 +66,59 @@ a * {
     border-bottom: double;
 }
 
-#bio {
-    width: 100%;
-    margin-bottom: 2%;
-}
-
-#spine h1 {
+.spine h1 {
     color: #080b06;
     font-size: 8vw;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     text-shadow: 1px 1px #bd7e75;
 }
 
-#bio h1 {
-    margin: 0;
+#alert {
+    z-index: 3;
+    position: fixed;
+    top: 35vh;
+    left: 35vw;
+    font-size: 5vh;
+    color: #ffffff;
+}
+
+#alert img {
+    width: 80%;
+}
+
+#book {
+    height: 84vh;
+    width: 93vw;
+    margin: 1% 2% 1% 2%;
+    overflow: hidden;
+    /* For iphones */
+    position: fixed; 
 }
 
 #myFace {
     width: 35vw;
     float: left;
-    margin: 4%;
 }
 
 #socialButtons {
-    margin: 0;
+    margin: 1%;
 }
+
 
 /*When screen is longer than it is wide*/
 @media screen and (max-aspect-ratio: 5/4) {
 
-    #bio {
+    #myFace {
     }
 }
 
 @media screen and (max-width: 280px) {
-    #bio h1 {
+    #myFace {
     }
 }
 
 @media screen and (max-height: 120px) {
-    #bio h1 {
+    #myFace {
     }
 }
 
