@@ -41,7 +41,8 @@ a * {
 }
 
 .social {
-    width: 40px;
+    width: 5%;
+    margin: 1% 1% 0% 1%;
 }
 
 .lang {
@@ -61,14 +62,27 @@ a * {
 .paper {
     background-image: url("portfolio-yellow-texture.png");
     background-color: #f2ecba;
-    overflow-y: auto;
     border-right: double;
     border-bottom: double;
 }
 
+.paper-inner {
+    height: 92%;
+    width: 92%;
+    margin: 4%;
+    overflow-y: auto;
+}
+
 .spine h1 {
-    color: #080b06;
+    color: #120907;
     font-size: 8vw;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    text-shadow: 1px 1px #bd7e75;
+}
+
+.spine h2 {
+    color: #120907;
+    font-size: 3vw;
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     text-shadow: 1px 1px #bd7e75;
 }
@@ -101,9 +115,8 @@ a * {
 }
 
 #socialButtons {
-    margin: 1%;
+    width: 100%;
 }
-
 
 /*When screen is longer than it is wide*/
 @media screen and (max-aspect-ratio: 5/4) {
@@ -112,13 +125,19 @@ a * {
     }
 }
 
-@media screen and (max-width: 280px) {
-    #myFace {
+@media screen and (max-width: 820px) {
+    .paper-inner {
+        height: 80%;
+        width: 80%;
+        margin: 10%;
     }
 }
 
-@media screen and (max-height: 120px) {
-    #myFace {
+@media screen and (max-height: 320px) {
+    .paper-inner {
+        height: 70%;
+        width: 70%;
+        margin: 15%;
     }
 }
 
