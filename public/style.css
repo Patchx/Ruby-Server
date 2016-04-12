@@ -24,7 +24,13 @@ h1 {
 
 h3 {
     font-family: "Comic Sans MS", sans-serif;
+    font-size: 4vw;
     display: inline;
+}
+
+a {
+    text-decoration: none !important;
+    color: black;
 }
 
 a * {
@@ -33,6 +39,11 @@ a * {
 
 .project {
     height: 210px;
+    margin: 1% 2% 1% 2%;
+}
+
+.project-big {
+    height: 95%;
     margin: 1% 2% 1% 2%;
 }
 
@@ -85,6 +96,10 @@ a * {
     font-size: 3vw;
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     text-shadow: 1px 1px #bd7e75;
+}
+
+.site {
+    height: 70%;
 }
 
 #alert {
