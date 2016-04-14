@@ -12,12 +12,12 @@ get '/resume' do
 	redirect './index.html'
 end
 
-get '/stocks' do
+get '/stocks/' do
 
 	response = HTTParty.get("http://finance.yahoo.com/q?s=#{params[:stock]}")
 	dom = Nokogiri::HTML(response.body)
 	if params[:stock] == nil
-		return "<h1>Welcome to the stock ticker scrapper. Please enter the stock data into your brower in the following format:  localhost:4567/?stock=AAPL</h1>"
+		return "<h1>Welcome to the stock ticker scrapper. Please enter the stock data into your brower in the following format:  localhost:4567/stocks/?stock=AAPL</h1>"
 	end
 	ticker_span = dom.xpath("//span[@id='yfs_l84_#{params[:stock].downcase}']")
 	if ticker_span.children[0] == nil

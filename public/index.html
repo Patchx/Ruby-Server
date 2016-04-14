@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<link type="text/css" rel="stylesheet" href="./style.css"/>
 
 	<!-- JQuery CDN, needed for TurnJS-->
@@ -12,95 +15,118 @@
 
 	<!-- PureCSS CDN for menus -->
 	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+  <link rel="stylesheet" href="css/layouts/side-menu.css">
 
 	<title>Robert Anderson</title>
 </head>
 
 <body>
 
-<div class="pure-u-6-12" ID="socialButtons">
-	<a href="tel:+1-561-310-9933" target="_blank"><img class="social" alt="call" src="phone.png"></a>
+<div id="layout">
+    <!-- Menu toggle -->
+    <a href="#menu" id="menuLink" class="menu-link">
+        <!-- Hamburger icon -->
+        <span></span>
+    </a>
 
-	<a ID="email" href="#"><img class="social" alt="email" src="mail.png"></a>
+    <div id="menu">
+        <div class="pure-menu">
 
-	<a href="https://drive.google.com/file/d/0B2QzEXlTkhI7SHRETnJkXzBhT2M/view?usp=sharing" target="_blank"><img class="social" alt="resume" src="resume.png"></a>
+            <ul class="pure-menu-list">
 
-	<a href="https://github.com/Patchx" target="_blank"><img class="social" alt="GitHub" src="github-icon.png"></a>
+                <a href="tel:+1-561-310-9933" target="_blank"><li class="pure-menu-item"><img class="social" alt="call" src="phone.png"></li></a>
 
-	<a href="https://www.linkedin.com/in/robertandersonlink" target="_blank"><img class="social" alt="LinkedIn" src="linkedin-icon.png"></a>
+                <a ID="email" href="#"><li class="pure-menu-item"><img class="social" alt="email" src="mail.png"></li></a>
 
-	<a href="https://twitter.com/randerTw?lang=en" target="_blank"><img class="social" alt="Twitter" src="twitter-icon.png"></a>
+                <a href="https://drive.google.com/file/d/0B2QzEXlTkhI7SHRETnJkXzBhT2M/view?usp=sharing" target="_blank"><li class="pure-menu-item" class="menu-item-divided pure-menu-selected"><img class="social" alt="resume" src="resume.png"></li></a>
 
+                <a href="https://github.com/Patchx" target="_blank"><li class="pure-menu-item"><img class="social" alt="GitHub" src="github-icon.png"></li></a>
+
+                <a href="https://www.linkedin.com/in/robertandersonlink" target="_blank"><li class="pure-menu-item"><img class="social" alt="LinkedIn" src="linkedin-icon.png"></li></a>
+
+                <a href="https://twitter.com/randerTw?lang=en" target="_blank"><li class="pure-menu-item"><img class="social" alt="Twitter" src="twitter-icon.png"></li></a>
+
+            </ul>
+        </div>
+    </div>
+
+    <div id="main">
+
+      <div class="content">
+
+				<div ID="book">
+
+					<div class="spine">
+						<h1>Robert Anderson</h1>
+						<br><br>
+						<h2>< Click / Swipe to flip the page ></h2>
+
+					</div>
+
+					<div class="paper"><div class="paper-inner">
+
+						<div class="project-big">
+							<a href="https://github.com/icdozen/sunnyside" target="_blank"><h3>SunnySide App  </h3></a>
+							<a href="https://www.linkedin.com/pulse/wyncode-fort-lauderdale-pitch-day-4-robert-anderson?trk=prof-post" target="_blank"><img class="repo" src="video.png"></a><br>
+							<a href="https://sunny-side.herokuapp.com" target="_blank"><img class="site" src="sunnyside.png"></a>
+							<br>		
+							<img class="lang" src="ruby-drawn.png">
+							<img class="lang" src="html-drawn.png">
+						</div>
+
+					</div></div>
+
+					<div class="paper"><div class="paper-inner">
+
+						<div class="project-big">
+							<a href="https://github.com/jmils/Trio_Project" target="_blank"><h3>FlipFlop App</h3></a><br>
+							<a href="http://flip-flop.herokuapp.com/" target="_blank"><img class="site" src="flipflop.png"></a><br>
+							<img class="lang" src="ruby-drawn.png">
+							<img class="lang" src="html-drawn.png">
+						</div>
+					</div></div>
+
+					<div class="paper"><div class="paper-inner">
+
+						<div class="project">
+							<a href="https://github.com/Patchx/ruby_DB_GitHub" target="_blank"><h3>CRUD Database Program<br></h3></a>
+							<img class="lang" src="ruby-drawn.png">
+						</div>
+
+						<div class="project">
+							<a href="https://github.com/Patchx/wyncode_GitHub" target="_blank"><h3>Wyncode Projects<br></h3></a>
+							<img class="lang" src="ruby-drawn.png">
+							<img class="lang" src="html-drawn.png">
+						</div>
+
+						<div class="project">
+							<a href="https://github.com/Patchx/Python_easygui_patch" target="_blank"><h3>Modification to EasyGUI<br></h3></a>
+							<img class="lang" src="python-drawn.png">
+						</div>
+
+						<div class="project">
+							<a href="https://github.com/Patchx/Cpp_Homework" target="_blank"><h3>Intro to C++ Homework<br></h3></a>
+							<img class="lang" src="cpp-drawn.png">
+						</div>
+
+						<div class="project">
+							<a href="https://github.com/Patchx/R_Projects" target="_blank"><h3>Biofuels Analysis R scripts<br></h3></a>
+							<img class="lang" src="R-drawn.png">
+						</div>
+
+					</div></div>
+
+					<div class="spine">
+						<img ID="myFace" src="profile-pic-glow.png">
+					</div>
+
+				</div>
+
+        </div>
+    </div>
 </div>
 
-<div ID="book">
-
-	<div class="spine">
-		<h1>Robert Anderson</h1>
-		<br>
-		<h2>< Click / Swipe to flip the page ></h2>
-
-	</div>
-
-	<div class="paper"><div class="paper-inner">
-
-		<div class="project-big">
-			<a href="https://github.com/icdozen/sunnyside" target="_blank"><h3>SunnySide App  </h3></a>
-			<a href="https://www.linkedin.com/pulse/wyncode-fort-lauderdale-pitch-day-4-robert-anderson?trk=prof-post" target="_blank"><img class="repo" src="video.png"></a><br>
-			<a href="https://sunny-side.herokuapp.com" target="_blank"><img class="site" src="sunnyside.png"></a>
-			<br>		
-			<img class="lang" src="ruby-drawn.png">
-			<img class="lang" src="html-drawn.png">
-		</div>
-
-	</div></div>
-
-	<div class="paper"><div class="paper-inner">
-
-		<div class="project-big">
-			<a href="https://github.com/jmils/Trio_Project" target="_blank"><h3>FlipFlop App</h3></a><br>
-			<a href="http://flip-flop.herokuapp.com/" target="_blank"><img class="site" src="flipflop.png"></a><br>
-			<img class="lang" src="ruby-drawn.png">
-			<img class="lang" src="html-drawn.png">
-		</div>
-	</div></div>
-
-	<div class="paper"><div class="paper-inner">
-
-		<div class="project">
-			<a href="https://github.com/Patchx/ruby_DB_GitHub" target="_blank"><h3>CRUD Database Program<br></h3></a>
-			<img class="lang" src="ruby-drawn.png">
-		</div>
-
-		<div class="project">
-			<a href="https://github.com/Patchx/wyncode_GitHub" target="_blank"><h3>Wyncode Projects<br></h3></a>
-			<img class="lang" src="ruby-drawn.png">
-			<img class="lang" src="html-drawn.png">
-		</div>
-
-		<div class="project">
-			<a href="https://github.com/Patchx/Python_easygui_patch" target="_blank"><h3>Modification to EasyGUI<br></h3></a>
-			<img class="lang" src="python-drawn.png">
-		</div>
-
-		<div class="project">
-			<a href="https://github.com/Patchx/Cpp_Homework" target="_blank"><h3>Intro to C++ Homework<br></h3></a>
-			<img class="lang" src="cpp-drawn.png">
-		</div>
-
-		<div class="project">
-			<a href="https://github.com/Patchx/R_Projects" target="_blank"><h3>Biofuels Analysis R scripts<br></h3></a>
-			<img class="lang" src="R-drawn.png">
-		</div>
-
-	</div></div>
-
-	<div class="spine">
-		<img ID="myFace" src="profile-pic-glow.png">
-	</div>
-
-</div>
-
+<script src="js/ui.js"></script>
 
 <script type="text/javascript">
 
