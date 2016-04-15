@@ -9,6 +9,7 @@
 
 body {
   margin: 0;
+  background-color: #086375;
   overflow: hidden;
 } 
 
@@ -40,6 +41,10 @@ ul {
 
 a * {
     margin: 0%;
+}
+
+.ui-page .ui-page-theme-a .ui-page-active {
+    overflow: hidden !important;
 }
 
 .project {
