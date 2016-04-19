@@ -54,6 +54,11 @@
 
       <div class="content">
 
+      	<div ID="navbar">
+      		<img class="navIcon" ID="left-turn" src="arrow-left.png">
+      		<img class="navIcon" ID="right-turn" src="arrow-right.png">
+      	</div>
+
 				<div ID="book">
 
 					<div class="spine">
@@ -67,7 +72,7 @@
 
 						<div class="project-big">
 							<a href="https://github.com/icdozen/sunnyside" target="_blank"><h3>SunnySide App  </h3></a>
-							<a href="https://www.linkedin.com/pulse/wyncode-fort-lauderdale-pitch-day-4-robert-anderson?trk=prof-post" target="_blank"><img class="repo" src="video.png"></a><br>
+							<a href="https://www.linkedin.com/pulse/wyncode-fort-lauderdale-pitch-day-4-robert-anderson?trk=prof-post" target="_blank"><img class="repo" src="video.png"></a><br><br>
 							<a href="https://sunny-side.herokuapp.com" target="_blank"><img class="site" src="sunnyside.png"></a>
 							<br>		
 							<img class="lang" src="ruby-drawn.png">
@@ -79,7 +84,7 @@
 					<div class="paper"><div class="paper-inner">
 
 						<div class="project-big">
-							<a href="https://github.com/jmils/Trio_Project" target="_blank"><h3>FlipFlop App</h3></a><br>
+							<a href="https://github.com/jmils/Trio_Project" target="_blank"><h3>FlipFlop App</h3></a><br><br>
 							<a href="http://flip-flop.herokuapp.com/" target="_blank"><img class="site" src="flipflop.png"></a><br>
 							<img class="lang" src="ruby-drawn.png">
 							<img class="lang" src="html-drawn.png">
@@ -88,30 +93,22 @@
 
 					<div class="paper"><div class="paper-inner">
 
+						<br><h4>More Code examples on Github</h4><br><br>
+
 						<div class="project">
-							<a href="https://github.com/Patchx/ruby_DB_GitHub" target="_blank"><h4>CRUD Database Program<br></h4></a>
-							<img class="lang" src="ruby-drawn.png">
+							<a href="https://github.com/search?l=Ruby&q=user%3APatchx&ref=searchresults&type=Repositories&utf8=%E2%9C%93" target="_blank"><img class="lang" src="ruby-drawn.png"></a>
 						</div>
 
 						<div class="project">
-							<a href="https://github.com/Patchx/wyncode_GitHub" target="_blank"><h4>Wyncode Projects<br></h4></a>
-							<img class="lang" src="ruby-drawn.png">
-							<img class="lang" src="html-drawn.png">
+							<a href="https://github.com/search?l=Python&q=user%3APatchx&ref=searchresults&type=Repositories&utf8=%E2%9C%93" target="_blank"><img class="lang" src="python-drawn.png"></a>
 						</div>
 
 						<div class="project">
-							<a href="https://github.com/Patchx/Python_easygui_patch" target="_blank"><h4>Modification to EasyGUI<br></h4></a>
-							<img class="lang" src="python-drawn.png">
+							<a href="https://github.com/search?l=C%2B%2B&q=user%3APatchx&ref=searchresults&type=Repositories&utf8=%E2%9C%93" target="_blank"><img class="lang" src="cpp-drawn.png"></a>
 						</div>
 
 						<div class="project">
-							<a href="https://github.com/Patchx/Cpp_Homework" target="_blank"><h4>Intro to C++ Homework<br></h4></a>
-							<img class="lang" src="cpp-drawn.png">
-						</div>
-
-						<div class="project">
-							<a href="https://github.com/Patchx/R_Projects" target="_blank"><h4>Biofuels Analysis R scripts<br></h4></a>
-							<img class="lang" src="R-drawn.png">
+							<a href="https://github.com/search?l=R&q=user%3APatchx&ref=searchresults&type=Repositories&utf8=%E2%9C%93" target="_blank"><img class="lang" src="R-drawn.png"></a>
 						</div>
 
 					</div></div>
@@ -169,6 +166,14 @@ $(window).on("swipeleft",function(){
 
 $(window).on("swiperight",function(){
 	$('#book').turn('previous');
+});
+
+$('#left-turn').on("click",function(){
+	$('#book').turn('previous');
+});
+
+$('#right-turn').on("click",function(){
+	$('#book').turn('next');
 });
 
 document.getElementById("email").addEventListener("click", function() {

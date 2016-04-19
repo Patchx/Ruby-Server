@@ -72,6 +72,10 @@ a * {
     height: 80px;
 }
 
+.navIcon {
+    width: 4vw;
+}
+
 .spine {
     background-image: url("book-texture.jpg");
     background-color: #281719;
@@ -118,6 +122,11 @@ a * {
 #menu {
     overflow-y: auto !important;
     overflow-x: hidden !important;
+}
+
+#navbar {
+    margin-top: 4%;
+    margin-left: 40vw;
 }
 
 #alert {
