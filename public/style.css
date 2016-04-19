@@ -50,7 +50,6 @@ a * {
 }
 
 .project {
-    height: 210px;
     margin: 1% 2% 1% 2%;
 }
 
@@ -73,7 +72,7 @@ a * {
 }
 
 .navIcon {
-    width: 4vw;
+    height: 80px;
 }
 
 .spine {
@@ -112,11 +111,28 @@ a * {
 }
 
 .site {
-    height: 70%;
+    width: 85%;
+}
+
+.site-small {
+    width: 70%;
+}
+
+.jobs-doodle {
+    width: 30%;
 }
 
 .ui-loader {
     display: none;
+}
+
+#main {
+    color: black;
+}
+
+#main p {
+    font-size: 2vw;
+    line-height: 150%;
 }
 
 #menu {
@@ -126,7 +142,8 @@ a * {
 
 #navbar {
     margin-top: 4%;
-    margin-left: 40vw;
+    margin-left: 2vw;
+    width: 79vw;
 }
 
 #alert {
@@ -169,6 +186,12 @@ a * {
         height: 80%;
         width: 80%;
         margin: 10%;
+    }
+    .navIcon {
+        height: 40px;
+    }
+    #main p {
+        font-size: 4vw;
     }
 }
 
