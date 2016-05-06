@@ -181,7 +181,7 @@ a * {
     }
 }
 
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 1100px) {
     .paper-inner {
         height: 80%;
         width: 80%;
@@ -189,6 +189,16 @@ a * {
     }
     .navIcon {
         height: 40px;
+    }
+    #book {
+        height: 75vh;
+        width: 70vw;
+        margin-top: 4%;
+        margin-left: 0.5vw;
+    }
+    #navbar {
+        margin-left: 0.5vw;
+        width: 70vw;
     }
     #main p {
         font-size: 4vw;
@@ -202,4 +212,3 @@ a * {
         margin: 15%;
     }
 }
-
