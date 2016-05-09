@@ -5,11 +5,11 @@ require 'active_support/all'
 
 get '/?' do
 	"<h1>Welcome to Robert's Test Server</h1> \n
-	<p>Things to type: \nresume \nstocks \nsinatra \ntest</p>"
+	<p>Things to type: \nresume \ngame \nstocks \nsinatra \ntest </p>"
 end
 
 get '/resume' do
-	redirect './index.html'
+	redirect './resume/index.html'
 end
 
 get '/stocks/' do
