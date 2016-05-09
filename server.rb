@@ -12,6 +12,10 @@ get '/resume' do
 	redirect './resume/index.html'
 end
 
+get '/game' do
+	redirect './game/index.html'
+end
+
 get '/stocks/' do
 
 	response = HTTParty.get("http://finance.yahoo.com/q?s=#{params[:stock]}")
