@@ -217,10 +217,13 @@ a * {
 }
 
 @media screen and (max-width: 770px) {
+  #first-page {
+    margin-left: 40px;
+  }
   #navbar {
-    margin-top: 60px;
+    width: 80vw;
   }
   #book {
-    width: 89vw;
+    width: 80vw;
   }
 }
