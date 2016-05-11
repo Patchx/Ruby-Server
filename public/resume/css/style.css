@@ -220,4 +220,7 @@ a * {
   #navbar {
     margin-top: 60px;
   }
+  #book {
+    width: 89vw;
+  }
 }
