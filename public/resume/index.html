@@ -4,26 +4,19 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link type="text/css" rel="stylesheet" href="./style.css"/>
-
 	<!-- JQuery CDN, needed for TurnJS-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.js"></script>
 
 	<!-- TurnJS for page turn -->
-	<script type="text/javascript" src="turn.js"></script>
+	<script type="text/javascript" src="./js/turn.js"></script>
 
-	<!-- PureCSS CDN for menus -->
-	<link rel="stylesheet" href="https://yui.yahooapis.com/pure/0.6.0/pure-min.css">
-  <link rel="stylesheet" href="css/layouts/side-menu.css">
+	<!-- PureCSS framework -->
+	<link type="text/css" rel="stylesheet" href="./css/pure-min.css"/>
+	<link type="text/css" rel="stylesheet" href="./css/side-menu.css"/>
 
-  <!-- PureCSS CDN for responsive menus -->
-	<!--[if lte IE 8]>
-	    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-old-ie-min.css">
-	<![endif]-->
-	<!--[if gt IE 8]><!-->
-	  <link rel="stylesheet" href="https://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
-	<!--<![endif]-->
+	<!-- My styles -->
+	<link type="text/css" rel="stylesheet" href="./css/style.css"/>
 
 	<title>Robert Anderson</title>
 </head>
@@ -42,17 +35,17 @@
 
             <ul class="pure-menu-list">
 
-                <a href="tel:+1-561-310-9933" target="_blank"><li class="pure-menu-item"><img class="social" alt="call" src="phone.png"></li></a>
+                <a href="tel:+1-561-310-9933" target="_blank"><li class="pure-menu-item"><img class="social" alt="call" src="./assets/phone.png"></li></a>
 
-                <a ID="email" href="#"><li class="pure-menu-item"><img class="social" alt="email" src="mail.png"></li></a>
+                <a ID="email" href="#"><li class="pure-menu-item"><img class="social" alt="email" src="./assets/mail.png"></li></a>
 
-                <a href="https://drive.google.com/file/d/0B2QzEXlTkhI7SHRETnJkXzBhT2M/view?usp=sharing" target="_blank"><li class="pure-menu-item" class="menu-item-divided pure-menu-selected"><img class="social" alt="resume" src="resume.png"></li></a>
+                <a href="https://drive.google.com/file/d/0B2QzEXlTkhI7SHRETnJkXzBhT2M/view?usp=sharing" target="_blank"><li class="pure-menu-item" class="menu-item-divided pure-menu-selected"><img class="social" alt="resume" src="./assets/resume.png"></li></a>
 
-                <a href="https://github.com/Patchx" target="_blank"><li class="pure-menu-item"><img class="social" alt="GitHub" src="github-icon.png"></li></a>
+                <a href="https://github.com/Patchx" target="_blank"><li class="pure-menu-item"><img class="social" alt="GitHub" src="./assets/github-icon.png"></li></a>
 
-                <a href="https://www.linkedin.com/in/robertandersonlink" target="_blank"><li class="pure-menu-item"><img class="social" alt="LinkedIn" src="linkedin-icon.png"></li></a>
+                <a href="https://www.linkedin.com/in/robertandersonlink" target="_blank"><li class="pure-menu-item"><img class="social" alt="LinkedIn" src="./assets/linkedin-icon.png"></li></a>
 
-                <a href="https://twitter.com/randerTw?lang=en" target="_blank"><li class="pure-menu-item"><img class="social" alt="Twitter" src="twitter-icon.png"></li></a>
+                <a href="https://twitter.com/randerTw?lang=en" target="_blank"><li class="pure-menu-item"><img class="social" alt="Twitter" src="./assets/twitter-icon.png"></li></a>
 
             </ul>
         </div>
@@ -63,15 +56,11 @@
       <div class="content">
 
       	<div class="pure-g" ID="navbar">
-					    <div class="pure-u-7-24"> <p> </p> </div>
-					    <div class="pure-u-10-24">
-								<img class="navIcon" ID="first-page" src="arrow-first.png">
-								<img class="navIcon" ID="left-turn" src="arrow-left.png">
-			      		<img class="navIcon" ID="webcode" src="webcode.png">	 
-			      		<img class="navIcon" ID="right-turn" src="arrow-right.png">	 
-			      		<img class="navIcon" ID="last-page" src="arrow-last.png">	 
-					    </div>
-					    <div class="pure-u-7-24"> <p> </p> </div>
+					<img class="navIcon" ID="first-page" src="./assets/arrow-first.png" alt="first">
+					<img class="navIcon" ID="left-turn" src="./assets/arrow-left.png" alt="previous">
+	    		<img class="navIcon" ID="webcode" src="./assets/webcode.png" alt="projects">	 
+	    		<img class="navIcon" ID="right-turn" src="./assets/arrow-right.png" alt="next">	 
+	    		<img class="navIcon" ID="last-page" src="./assets/arrow-last.png" alt="last">	 
       	</div>
 
 				<div ID="book">
@@ -95,7 +84,7 @@
 						  I started my career in Biochemistry,<br>
 						  Studying the secrets of the molecular world.
 						</p>
-						<img class="jobs-doodle" src="robjobs-lab.png">
+						<img class="jobs-doodle" src="./assets/robjobs-lab.png">
 					</div></div>
 
 					<div class="paper"><div class="paper-inner">
@@ -104,7 +93,7 @@
 						  So in grad school I studied crop genomics,<br>
 						  Taking part in biofuels research.
 						</p>
-						<img class="jobs-doodle" src="robjobs-plant.png">
+						<img class="jobs-doodle" src="./assets/robjobs-plant.png">
 					</div></div>
 
 					<div class="paper"><div class="paper-inner">
@@ -122,14 +111,14 @@
 						  It wasn't glamorous work, but I felt good about protecting people.<br><br>
 						  And.. I kept coding
 						</p>
-						<img class="jobs-doodle" src="robjobs-pools.png">
+						<img class="jobs-doodle" src="./assets/robjobs-pools.png">
 					</div></div>
 
 					<div class="paper"><div class="paper-inner">
 						<p>
 						  After taking some classes and completing some projects, I knew I wanted to code full time.
 						  It was kind of scary, but I left my job and joined a 9 week coding bootcamp.<br><br>
-							<a href="https://wyncode.co/" target="_blank"><img class="site-small" src="wyncodeFLL4.jpeg"></a>					  
+							<a href="https://wyncode.co/" target="_blank"><img class="site-small" src="./assets/wyncodeFLL4.jpeg"></a>					  
 						</p>
 					</div></div>
 
@@ -139,7 +128,7 @@
 						  I love programming because I get to solve puzzles and build things. And, the things that I make can actually help people.<br><br>
 						  Wanna see what I've made?<br>
 						</p>
-						<img class="jobs-doodle" src="robjobs-coding.png">
+						<img class="jobs-doodle" src="./assets/robjobs-coding.png">
 					</div></div>
 
 					<!-- Page 9 - Projects -->
@@ -147,11 +136,11 @@
 					<div class="paper"><div class="paper-inner">
 
 						<div class="project-big">
-							<a href="https://lessondb.herokuapp.com/" target="_blank"><img class="site" src="lessondb.png"></a>
+							<a href="https://lessondb.herokuapp.com/" target="_blank"><img class="site" src="./assets/lessondb.png"></a>
 							<br>		
-							<a href="https://github.com/Patchx/lessonDB" target="_blank"><img class="lang" src="ruby-drawn.png"></a>
-							<a href="https://github.com/Patchx/lessonDB" target="_blank"><img class="lang" src="html-drawn.png"></a>
-							<a href="https://github.com/Patchx/lessonDB" target="_blank"><img class="lang" src="bootstrap-drawn.png"></a>
+							<a href="https://github.com/Patchx/lessonDB" target="_blank"><img class="lang" src="./assets/ruby-drawn.png"></a>
+							<a href="https://github.com/Patchx/lessonDB" target="_blank"><img class="lang" src="./assets/html-drawn.png"></a>
+							<a href="https://github.com/Patchx/lessonDB" target="_blank"><img class="lang" src="./assets/bootstrap-drawn.png"></a>
 						</div>
 
 					</div></div>
@@ -159,11 +148,10 @@
 					<div class="paper"><div class="paper-inner">
 
 						<div class="project-big">
-							<a href="https://sunny-side.herokuapp.com" target="_blank"><img class="site" src="sunnyside.png"></a>
-							<br>		
-							<a href="https://www.linkedin.com/pulse/wyncode-fort-lauderdale-pitch-day-4-robert-anderson?trk=prof-post" target="_blank"><img class="repo" src="video.png"></a><br><br>
-							<a href="https://github.com/icdozen/sunnyside" target="_blank"><img class="lang" src="ruby-drawn.png"></a>
-							<a href="https://github.com/icdozen/sunnyside" target="_blank"><img class="lang" src="html-drawn.png"></a>
+							<a href="https://www.linkedin.com/pulse/wyncode-fort-lauderdale-pitch-day-4-robert-anderson?trk=prof-post" target="_blank"><img class="site" src="./assets/sunnyside.png"></a>
+							<br>	
+							<a href="https://github.com/icdozen/sunnyside" target="_blank"><img class="lang" src="./assets/ruby-drawn.png"></a>
+							<a href="https://github.com/icdozen/sunnyside" target="_blank"><img class="lang" src="./assets/html-drawn.png"></a>
 						</div>
 
 					</div></div>
@@ -171,10 +159,10 @@
 					<div class="paper"><div class="paper-inner">
 
 						<div class="project-big">
-							<a href="https://flip-flop.herokuapp.com/" target="_blank"><img class="site" src="flipflop.png"></a><br>
-							<a href="https://github.com/Patchx/Trio_Project" target="_blank"><img class="lang" src="ruby-drawn.png"></a>			
-							<a href="https://github.com/Patchx/Trio_Project" target="_blank"><img class="lang" src="html-drawn.png"></a>
-							<a href="https://github.com/Patchx/Trio_Project" target="_blank"><img class="lang" src="bootstrap-drawn.png"></a>
+							<a href="https://flip-flop.herokuapp.com/" target="_blank"><img class="site" src="./assets/flipflop.png"></a><br>
+							<a href="https://github.com/Patchx/Trio_Project" target="_blank"><img class="lang" src="./assets/ruby-drawn.png"></a>			
+							<a href="https://github.com/Patchx/Trio_Project" target="_blank"><img class="lang" src="./assets/html-drawn.png"></a>
+							<a href="https://github.com/Patchx/Trio_Project" target="_blank"><img class="lang" src="./assets/bootstrap-drawn.png"></a>
 						</div>
 					</div></div>
 
@@ -183,29 +171,29 @@
 						<br><h1>More Code examples on Github</h1><br><br>
 
 						<div class="project">
-							<a href="https://github.com/search?l=Ruby&q=user%3APatchx&ref=searchresults&type=Repositories&utf8=%E2%9C%93" target="_blank"><img class="lang" src="ruby-drawn.png"></a>
+							<a href="https://github.com/search?l=Ruby&q=user%3APatchx&ref=searchresults&type=Repositories&utf8=%E2%9C%93" target="_blank"><img class="lang" src="./assets/ruby-drawn.png"></a>
 						</div>
 
 						<div class="project">
-							<a href="https://github.com/search?l=Python&q=user%3APatchx&ref=searchresults&type=Repositories&utf8=%E2%9C%93" target="_blank"><img class="lang" src="python-drawn.png"></a>
+							<a href="https://github.com/search?l=Python&q=user%3APatchx&ref=searchresults&type=Repositories&utf8=%E2%9C%93" target="_blank"><img class="lang" src="./assets/python-drawn.png"></a>
 						</div>
 
 						<div class="project">
-							<a href="https://github.com/search?l=C%2B%2B&q=user%3APatchx&ref=searchresults&type=Repositories&utf8=%E2%9C%93" target="_blank"><img class="lang" src="cpp-drawn.png"></a>
+							<a href="https://github.com/search?l=C%2B%2B&q=user%3APatchx&ref=searchresults&type=Repositories&utf8=%E2%9C%93" target="_blank"><img class="lang" src="./assets/cpp-drawn.png"></a>
 						</div>
 
 						<div class="project">
-							<a href="https://github.com/search?l=PHP&q=user%3APatchx+&type=Repositories" target="_blank"><img class="lang" src="php-drawn.png"></a>
+							<a href="https://github.com/search?l=PHP&q=user%3APatchx+&type=Repositories" target="_blank"><img class="lang" src="./assets/php-drawn.png"></a>
 						</div>
 
 						<div class="project">
-							<a href="https://github.com/search?l=R&q=user%3APatchx&ref=searchresults&type=Repositories&utf8=%E2%9C%93" target="_blank"><img class="lang" src="R-drawn.png"></a>
+							<a href="https://github.com/search?l=R&q=user%3APatchx&ref=searchresults&type=Repositories&utf8=%E2%9C%93" target="_blank"><img class="lang" src="./assets/R-drawn.png"></a>
 						</div>
 
 					</div></div>
 
 					<div class="spine">
-						<img ID="myFace" src="profile-pic-glow.png">
+						<img ID="myFace" src="./assets/profile-pic-glow.png">
 					</div>
 
 				</div>
