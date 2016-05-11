@@ -8,14 +8,22 @@
 
 	<!-- JQuery CDN, needed for TurnJS-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.js"></script>
 
 	<!-- TurnJS for page turn -->
 	<script type="text/javascript" src="turn.js"></script>
 
 	<!-- PureCSS CDN for menus -->
-	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+	<link rel="stylesheet" href="https://yui.yahooapis.com/pure/0.6.0/pure-min.css">
   <link rel="stylesheet" href="css/layouts/side-menu.css">
+
+  <!-- PureCSS CDN for responsive menus -->
+	<!--[if lte IE 8]>
+	    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-old-ie-min.css">
+	<![endif]-->
+	<!--[if gt IE 8]><!-->
+	  <link rel="stylesheet" href="https://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+	<!--<![endif]-->
 
 	<title>Robert Anderson</title>
 </head>
@@ -55,15 +63,15 @@
       <div class="content">
 
       	<div class="pure-g" ID="navbar">
-					    <div class="pure-u-1-6"> <p> </p> </div>
-					    <div class="pure-u-4-6">
+					    <div class="pure-u-7-24"> <p> </p> </div>
+					    <div class="pure-u-10-24">
 								<img class="navIcon" ID="first-page" src="arrow-first.png">
 								<img class="navIcon" ID="left-turn" src="arrow-left.png">
 			      		<img class="navIcon" ID="webcode" src="webcode.png">	 
 			      		<img class="navIcon" ID="right-turn" src="arrow-right.png">	 
 			      		<img class="navIcon" ID="last-page" src="arrow-last.png">	 
 					    </div>
-					    <div class="pure-u-1-6"> <p> </p> </div>
+					    <div class="pure-u-7-24"> <p> </p> </div>
       	</div>
 
 				<div ID="book">
@@ -139,7 +147,7 @@
 					<div class="paper"><div class="paper-inner">
 
 						<div class="project-big">
-							<a href="http://lessondb.herokuapp.com/" target="_blank"><img class="site" src="lessondb.png"></a>
+							<a href="https://lessondb.herokuapp.com/" target="_blank"><img class="site" src="lessondb.png"></a>
 							<br>		
 							<a href="https://github.com/Patchx/lessonDB" target="_blank"><img class="lang" src="ruby-drawn.png"></a>
 							<a href="https://github.com/Patchx/lessonDB" target="_blank"><img class="lang" src="html-drawn.png"></a>
@@ -163,7 +171,7 @@
 					<div class="paper"><div class="paper-inner">
 
 						<div class="project-big">
-							<a href="http://flip-flop.herokuapp.com/" target="_blank"><img class="site" src="flipflop.png"></a><br>
+							<a href="https://flip-flop.herokuapp.com/" target="_blank"><img class="site" src="flipflop.png"></a><br>
 							<a href="https://github.com/Patchx/Trio_Project" target="_blank"><img class="lang" src="ruby-drawn.png"></a>			
 							<a href="https://github.com/Patchx/Trio_Project" target="_blank"><img class="lang" src="html-drawn.png"></a>
 							<a href="https://github.com/Patchx/Trio_Project" target="_blank"><img class="lang" src="bootstrap-drawn.png"></a>
