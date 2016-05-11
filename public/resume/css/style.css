@@ -221,9 +221,15 @@ a * {
     margin-left: 40px;
   }
   #navbar {
-    width: 80vw;
+    width: 82vw;
   }
   #book {
-    width: 80vw;
+    width: 82vw;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .navIcon {
+    height: 10vw;
   }
 }
