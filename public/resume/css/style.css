@@ -35,7 +35,7 @@ h4 {
 }
 
 p {
-  font-family: "Comic Sans MS", sans-serif;    
+  font-family: "Comic Sans MS", sans-serif;
 }
 
 a {
@@ -135,11 +135,6 @@ a * {
   color: black;
 }
 
-#main p {
-  font-size: 2vw;
-  line-height: 150%;
-}
-
 #menu {
   overflow-y: auto !important;
   overflow-x: hidden !important;
@@ -180,8 +175,16 @@ a * {
   float: left;
 }
 
+#main p {
+  font-size: 30px;
+  line-height: 150%;
+}
+
 /*When screen is longer than it is wide*/
 @media screen and (max-aspect-ratio: 5/4) {
+  #book {
+    height: 85vh;
+  }
 }
 
 @media screen and (max-width: 1100px) {
@@ -197,8 +200,7 @@ a * {
     height: 40px;
   }
   #book {
-      height: 75vh;
-      width: 70vw;
+      width: 75vw;
       margin-top: 4%;
       margin-left: 0.5vw;
   }
@@ -206,19 +208,36 @@ a * {
       margin-left: 0.5vw;
       width: 70vw;
   }
-  #main p {
-      font-size: 4vw;
-  }
 }
 
 @media screen and (max-width: 770px) {
-  #first-page {
+  #navbar {
     margin-left: 40px;
   }
+  #main p {
+    font-size: 20px;
+    line-height: 150%;
+  }  
+}
+
+@media screen and (max-width: 400px) {
+  .content {
+    margin: 0px;
+    padding: 0px;
+  }
   #navbar {
-    width: 82vw;
+    margin-left: 60px;
   }
   #book {
-    width: 82vw;
+    margin: 0px;
+    padding: 0px;
+    width: 99vw;
+  }
+  #first-page {
+    display: none;
+  }
+  #last-page {
+    display: none;
   }
 }
+
