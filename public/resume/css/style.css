@@ -3,6 +3,10 @@
     border: 2px dashed blue;
 }*/
 
+* {
+  outline: none;
+}
+
 ::-webkit-scrollbar {
     display: none;
 }
