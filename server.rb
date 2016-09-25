@@ -12,6 +12,10 @@ get '/resume' do
 	redirect './resume/index.html'
 end
 
+get '/jenny' do
+	redirect './jenny/index.html'
+end
+
 get '/game' do
 	redirect './game/index.html'
 end

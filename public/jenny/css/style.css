@@ -1,0 +1,247 @@
+
+/** {
+    border: 2px dashed blue;
+}*/
+
+* {
+  outline: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+  margin: 0;
+  background-image: url("../assets/wood-texture.jpg");
+  background-color: #482819;
+} 
+
+div {
+  display: inline-block;
+  float: left;
+}
+
+h1 {
+  font-family: "Comic Sans MS", sans-serif;
+}
+
+h3 {
+  font-family: "Comic Sans MS", sans-serif;
+  font-size: 4vw;
+  display: inline;
+}
+
+h4 {
+  font-family: "Comic Sans MS", sans-serif;
+  font-size: 2.5vw;
+  display: inline;
+}
+
+p {
+  font-family: "Comic Sans MS", sans-serif;
+}
+
+a {
+  text-decoration: none !important;
+  color: black;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a * {
+  margin: 0%;
+}
+
+.project {
+  margin: 1% 2% 1% 2%;
+}
+
+.project-big {
+  height: 95%;
+  margin: 1% 2% 1% 2%;
+}
+
+.repo {
+  width: 40px;
+}
+
+.social {
+  width: 50%;
+  margin: 20% 0% 0% 20%;
+}
+
+.lang {
+  height: 80px;
+}
+
+.navIcon {
+  height: 80px;
+  color: white;
+}
+
+.spine {
+  background-image: url("../assets/book-texture.jpg");
+  background-color: #003b63;
+  text-align: center;
+  height: 99%;
+  width:99%;
+}
+
+.paper {
+  background-image: url("../assets/portfolio-yellow-texture.png");
+  background-color: #f2ecba;
+}
+
+.paper-inner {
+  height: 92%;
+  width: 92%;
+  margin: 4%;
+  overflow-y: auto;
+}
+
+.spine h1 {
+  color: #000000;
+  font-size: 7vw;
+  margin-top: 10%;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  text-shadow: 0px 1px 2px rgba(255,255,255,0.2);
+}
+
+.spine h2 {
+  color: #000000;
+  font-size: 3vw;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  text-shadow: 0px 1px 2px rgba(255,255,255,0.2);
+}
+
+.site {
+  width: 85%;
+}
+
+.site-small {
+  width: 70%;
+}
+
+.jobs-doodle {
+  width: 30%;
+}
+
+.ui-loader {
+  display: none;
+}
+
+#main {
+  color: black;
+}
+
+#menu {
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+}
+
+#navbar {
+  margin-top: 4%;
+  margin-left: 2vw;
+  width: 79vw;
+}
+
+#alert {
+  z-index: 3;
+  position: fixed;
+  top: 35vh;
+  left: 35vw;
+  font-size: 5vh;
+  color: #ffffff;
+}
+
+#alert img {
+  width: 80%;
+}
+
+#book {
+  display: block;
+  height: 120vh;
+  width: 79vw;
+  margin-top: 4%;
+  margin-left: 2vw;
+  overflow: hidden;
+  /* For iphones */
+  position: fixed; 
+}
+
+#myFace {
+  width: 35vw;
+  float: left;
+}
+
+#main p {
+  font-size: 30px;
+  line-height: 150%;
+}
+
+/*When screen is longer than it is wide*/
+@media screen and (max-aspect-ratio: 5/4) {
+  #book {
+    height: 85vh;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .paper-inner {
+    height: 80%;
+    width: 80%;
+    margin: 10%;
+  }
+  .navIcon {
+    height: 40px;
+  }
+  .lang {
+    height: 40px;
+  }
+  #book {
+      width: 75vw;
+      margin-top: 4%;
+      margin-left: 0.5vw;
+  }
+  #navbar {
+      margin-left: 0.5vw;
+      width: 70vw;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  #navbar {
+    margin-left: 40px;
+  }
+  #main p {
+    font-size: 20px;
+    line-height: 150%;
+  }  
+}
+
+@media screen and (max-width: 400px) {
+  .content {
+    margin: 0px;
+    padding: 0px;
+  }
+  #navbar {
+    margin-left: 60px;
+  }
+  #book {
+    margin: 0px;
+    padding: 0px;
+    width: 99vw;
+  }
+  #first-page {
+    display: none;
+  }
+  #last-page {
+    display: none;
+  }
+}
+
